@@ -26,6 +26,7 @@ import settings
 #
 from strategy import turtle_trade, high_tight_flag, climax_limitdown
 from work_flow import process
+from work_flow import lhb
 
 settings.init()
 # code_name = ('300623', '捷捷微电')
@@ -85,3 +86,7 @@ strategies = {
     }
 
 process(stocks, strategies)
+
+
+def test_lhb():
+    lhb()
